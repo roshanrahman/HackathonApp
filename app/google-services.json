@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "387795926433-e6gu9c3epvk8i89uhlvlvha337qj78bp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mjolnir.hackathonapp",
+            "certificate_hash": "c27c520e97f30575456e9c449bc407455ab5bed0"
+          }
+        },
+        {
           "client_id": "387795926433-260tggkjadb0mkrvejq210ucr5ij5oa6.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "387795926433-260tggkjadb0mkrvejq210ucr5ij5oa6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

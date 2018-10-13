@@ -1,5 +1,6 @@
 package com.example.mjolnir.hackathonapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -9,9 +10,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //TEST PUSH FROM SP
-        //Hello SP
-        //Hi guys from SIVARAM
-        //Fuck SP
+
+        Thread myThread = new Thread()
+        {
+            @Override
+            public void run() {
+                try {
+                    sleep(1200);
+                    Intent intent = new Intent(getApplicationContext(),Sign.class);
+                    startActivity(intent);
+                    finish();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        myThread.start();
     }
-}
+    }
+
