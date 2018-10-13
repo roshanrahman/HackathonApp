@@ -88,7 +88,8 @@ public class Sign extends AppCompatActivity {
                     @Override
                     public void onSuccess(AuthResult authResult) {
                         waitingDialog.dismiss();
-                        // TODO:for intent to drawer
+                        Intent intentToHomeIntent = new Intent(Sign.this, HomeActivity.class);
+                        startActivity(intentToHomeIntent);
                         finish();
 
                     }
